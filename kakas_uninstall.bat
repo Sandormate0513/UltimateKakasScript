@@ -1,9 +1,9 @@
-echo kakas fájlok törlése
+echo kakas fajlok torlese
 @echo off
-rmdir %appdata%\kakas
-del %appdata%\Microsoft\Windows\Start Menu\Programs\Startup\kakasextension.bat
-@echo on
+rmdir /s /q %appdata%\kakas
+cd %appdata%\Microsoft\Windows\Start Menu\Programs\Startup
+del kakasextension.bat
 cls
-echo kakas fájlok siikeresen törölve... szánalmas
+echo kakas fajlok sikeresen torolve... szanalmas
 timeout /t 5
 exit
