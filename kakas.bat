@@ -1,4 +1,3 @@
-echo kakas program futás alatt ...
 @echo off
 C:
 mkdir %appdata%\kakas
@@ -13,5 +12,7 @@ echo reg add "HKCU\control panel\desktop" /v wallpaper /t REG_SZ /d %appdata%\ka
 echo reg add "HKCU\control panel\desktop" /v WallpaperStyle /t REG_SZ /d 2 /f >> kakasextension.bat
 echo RUNDLL32.EXE USER32.DLL,UpdatePerUserSystemParameters 1, True >> kakasextension.bat
 cls
+@echo on
 echo Kakas sikeresen települt!
+timeout /t 5
 exit
